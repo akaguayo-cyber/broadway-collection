@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 10 musicales favoritos de Broadway</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">Broadway Collection</h2>
+
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#timeline">Línea del tiempo</a></li>
+                <li><a href="#musicales">Musicales</a></li>
+                <li><a href="#soundtrack">Soundtrack</a></li>
+                <li><a href="#ranking">Ranking</a></li>
+                <li><a href="#adaptaciones">Adaptaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Mis 10 musicales favoritos de Broadway</h1>
+
+            <p>
+                Una selección personal de historias, canciones y producciones
+                que marcaron la historia del teatro musical.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#musicales" class="btn principal">Explorar musicales</a>
+                <a href="#timeline" class="btn secundario">Ver línea del tiempo</a>
+            </div>
+        </div>
+    </section>
+
+<section id="timeline" class="section">
+
+    <h2>Línea del tiempo Broadway</h2>
+
+    <div class="timeline-container">
+
+        <div class="timeline-event">
+            <div class="year">1957</div>
+            <div class="event-card">
+                <h3>West Side Story</h3>
+                <p>Winter Garden Theatre</p>
+                <p>1 Tony Award · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">1979</div>
+            <div class="event-card">
+                <h3>Sweeney Todd</h3>
+                <p>Uris Theatre</p>
+                <p>8 Tony Awards · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">1984</div>
+            <div class="event-card">
+                <h3>Sunday in the Park with George</h3>
+                <p>Booth Theatre</p>
+                <p>2 Tony Awards · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">1987</div>
+            <div class="event-card">
+                <h3>Les Misérables</h3>
+                <p>Broadway Theatre</p>
+                <p>8 Tony Awards · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">1988</div>
+            <div class="event-card">
+                <h3>The Phantom of the Opera</h3>
+                <p>Majestic Theatre</p>
+                <p>7 Tony Awards · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">1996</div>
+            <div class="event-card">
+                <h3>Rent</h3>
+                <p>Nederlander Theatre</p>
+                <p>4 Tony Awards · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">2001</div>
+            <div class="event-card">
+                <h3>Mamma Mia!</h3>
+                <p>Winter Garden Theatre</p>
+                <p>0 Tony Awards · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">2008</div>
+            <div class="event-card">
+                <h3>In the Heights</h3>
+                <p>Richard Rodgers Theatre</p>
+                <p>4 Tony Awards · Estado: Fuera de cartelera</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">2015</div>
+            <div class="event-card">
+                <h3>Hamilton</h3>
+                <p>Richard Rodgers Theatre</p>
+                <p>11 Tony Awards · Estado: En Broadway</p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="year">2019</div>
+            <div class="event-card">
+                <h3>Moulin Rouge!</h3>
+                <p>Al Hirschfeld Theatre</p>
+                <p>10 Tony Awards · Estado: En Broadway</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="musicales" class="section">
+
+    <h2>Galería principal</h2>
+
+    <p>
+        Diez musicales que transformaron Broadway desde perspectivas
+        distintas: historia, arte, revolución, comunidad, romance,
+        tragedia y espectáculo.
+    </p>
+
+    <div class="cards-grid">
+
+        <div class="musical-card">
+            <img src="images/moulin-rouge.jpg" alt="Póster de Moulin Rouge The Musical">
+            <h3>Moulin Rouge!</h3>
+            <p>2019</p>
+            <p>10 Tony Awards</p>
+            <p>Estado: En Broadway</p>
+            <button class="details-btn" onclick="mostrarDetalle('moulin')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/hamilton.jpg" alt="Póster de Hamilton">
+            <h3>Hamilton</h3>
+            <p>2015</p>
+            <p>11 Tony Awards</p>
+            <p>Estado: En Broadway</p>
+            <button class="details-btn" onclick="mostrarDetalle('hamilton')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/phantom.jpg" alt="Póster de The Phantom of the Opera">
+            <h3>The Phantom of the Opera</h3>
+            <p>1988</p>
+            <p>7 Tony Awards</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('phantom')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/lesmis.jpg" alt="Póster de Les Misérables">
+            <h3>Les Misérables</h3>
+            <p>1987</p>
+            <p>8 Tony Awards</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('lesmis')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/west-side-story.jpg" alt="Póster de West Side Story">
+            <h3>West Side Story</h3>
+            <p>1957</p>
+            <p>1 Tony Award</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('westside')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/rent.jpg" alt="Póster de Rent">
+            <h3>Rent</h3>
+            <p>1996</p>
+            <p>4 Tony Awards</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('rent')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/mamma-mia.jpg" alt="Póster de Mamma Mia">
+            <h3>Mamma Mia!</h3>
+            <p>2001</p>
+            <p>0 Tony Awards</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('mamma')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/sweeney-todd.jpg" alt="Póster de Sweeney Todd">
+            <h3>Sweeney Todd</h3>
+            <p>1979</p>
+            <p>8 Tony Awards</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('sweeney')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/in-the-heights.jpg" alt="Póster de In the Heights">
+            <h3>In the Heights</h3>
+            <p>2008</p>
+            <p>4 Tony Awards</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('heights')">Ver detalles</button>
+        </div>
+
+        <div class="musical-card">
+            <img src="images/sunday-park.jpg" alt="Póster de Sunday in the Park with George">
+            <h3>Sunday in the Park with George</h3>
+            <p>1984</p>
+            <p>2 Tony Awards</p>
+            <p>Estado: Fuera de cartelera</p>
+            <button class="details-btn" onclick="mostrarDetalle('sunday')">Ver detalles</button>
+        </div>
+
+    </div>
+
+</section>
+<section id="detalle-musical" class="section detalle-musical">
+    <h2 id="detalle-titulo">Selecciona un musical</h2>
+    <div id="detalle-contenido">
+        <p>Haz clic en “Ver detalles” para consultar la ficha completa.</p>
+    </div>
+</section>
+
+<section id="soundtrack" class="section soundtrack-section">
+
+    <h2>Soundtrack</h2>
+
+    <p>
+        Canciones clave que construyen la memoria emocional de cada obra:
+        revolución, deseo, pérdida, comunidad, humor negro, celebración y creación artística.
+    </p>
+
+    <div class="soundtrack-grid">
+
+<article class="song-card">
+    <span class="song-musical">Moulin Rouge!</span>
+    <h3>Come What May</h3>
+    <p><strong>Momento emocional:</strong> amor romántico y promesa imposible.</p>
+    <p><strong>Personajes:</strong> Christian y Satine.</p>
+    <a href="#" class="listen-btn">Escuchar</a>
+</article>
+
+<article class="song-card">
+    <span class="song-musical">Hamilton</span>
+    <h3>My Shot</h3>
+    <p><strong>Momento emocional:</strong> ambición, revolución e impulso inicial.</p>
+    <p><strong>Personaje:</strong> Alexander Hamilton.</p>
+    <a href="https://youtu.be/lZ4UmlFNdSI?si=RWFqu1JuDUIvCoXp" class="listen-btn" target="_blank">Escuchar</a>
+</article>
+
+        <article class="song-card">
+            <span class="song-musical">The Phantom of the Opera</span>
+            <h3>The Music of the Night</h3>
+            <p><strong>Momento emocional:</strong> seducción, misterio y poder musical.</p>
+            <p><strong>Personaje:</strong> The Phantom.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+        <article class="song-card">
+            <span class="song-musical">Les Misérables</span>
+            <h3>Do You Hear the People Sing?</h3>
+            <p><strong>Momento emocional:</strong> levantamiento, esperanza y lucha colectiva.</p>
+            <p><strong>Personajes:</strong> Enjolras y estudiantes revolucionarios.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+        <article class="song-card">
+            <span class="song-musical">West Side Story</span>
+            <h3>Tonight</h3>
+            <p><strong>Momento emocional:</strong> amor prohibido y tensión trágica.</p>
+            <p><strong>Personajes:</strong> Tony y Maria.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+        <article class="song-card">
+            <span class="song-musical">Rent</span>
+            <h3>Seasons of Love</h3>
+            <p><strong>Momento emocional:</strong> memoria, pérdida, comunidad y celebración de la vida.</p>
+            <p><strong>Personajes:</strong> ensamble principal.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+        <article class="song-card">
+            <span class="song-musical">Mamma Mia!</span>
+            <h3>Dancing Queen</h3>
+            <p><strong>Momento emocional:</strong> celebración, amistad y nostalgia pop.</p>
+            <p><strong>Personajes:</strong> Donna, Tanya y Rosie.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+        <article class="song-card">
+            <span class="song-musical">Sweeney Todd</span>
+            <h3>A Little Priest</h3>
+            <p><strong>Momento emocional:</strong> humor negro, complicidad y giro macabro.</p>
+            <p><strong>Personajes:</strong> Sweeney Todd y Mrs. Lovett.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+        <article class="song-card">
+            <span class="song-musical">In the Heights</span>
+            <h3>96,000</h3>
+            <p><strong>Momento emocional:</strong> aspiración, comunidad y posibilidad de cambio.</p>
+            <p><strong>Personajes:</strong> Usnavi, Sonny, Benny, Vanessa y ensamble.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+        <article class="song-card">
+            <span class="song-musical">Sunday in the Park with George</span>
+            <h3>Move On</h3>
+            <p><strong>Momento emocional:</strong> creación, legado y reconciliación artística.</p>
+            <p><strong>Personajes:</strong> George y Dot.</p>
+            <a href="#" class="listen-btn">Escuchar</a>
+        </article>
+
+    </div>
+
+</section>
+<section id="ranking" class="section ranking-section">
+
+    <h2>Ranking visual</h2>
+
+    <p>
+        Esta selección no está ordenada por preferencia personal, sino por categorías
+        que destacan el peso cultural, visual, musical y narrativo de cada obra.
+    </p>
+
+    <div class="ranking-grid">
+
+        <article class="ranking-card">
+            <span class="ranking-icon">🏆</span>
+            <h3>Más premiados</h3>
+            <p>Hamilton y Moulin Rouge!</p>
+            <small>Por su volumen de Tony Awards y reconocimiento en Broadway.</small>
+        </article>
+
+        <article class="ranking-card">
+            <span class="ranking-icon">⏳</span>
+            <h3>Más longevo</h3>
+            <p>The Phantom of the Opera</p>
+            <small>Por su permanencia histórica como una de las producciones más largas de Broadway.</small>
+        </article>
+
+        <article class="ranking-card">
+            <span class="ranking-icon">🎼</span>
+            <h3>Más clásico</h3>
+            <p>West Side Story</p>
+            <small>Por su lugar central en la historia del teatro musical estadounidense.</small>
+        </article>
+
+        <article class="ranking-card">
+            <span class="ranking-icon">🚩</span>
+            <h3>Más político / histórico</h3>
+            <p>Hamilton y Les Misérables</p>
+            <small>Por convertir procesos históricos y conflictos sociales en narrativa musical.</small>
+        </article>
+
+        <article class="ranking-card">
+            <span class="ranking-icon">🖤</span>
+            <h3>Más oscuro</h3>
+            <p>Sweeney Todd</p>
+            <small>Por su tono macabro, humor negro y estructura cercana al thriller musical.</small>
+        </article>
+
+        <article class="ranking-card">
+            <span class="ranking-icon">🏙️</span>
+            <h3>Más comunitarios</h3>
+            <p>Rent e In the Heights</p>
+            <small>Por poner al centro la vida urbana, la pertenencia y la comunidad.</small>
+        </article>
+
+        <article class="ranking-card">
+            <span class="ranking-icon">🌊</span>
+            <h3>Más festivo</h3>
+            <p>Mamma Mia!</p>
+            <small>Por su energía pop, tono luminoso y estructura de celebración.</small>
+        </article>
+
+        <article class="ranking-card">
+            <span class="ranking-icon">🎨</span>
+            <h3>Más artístico / conceptual</h3>
+            <p>Sunday in the Park with George</p>
+            <small>Por su reflexión sobre creación, legado y vocación artística.</small>
+        </article>
+
+    </div>
+
+</section>
+
+<section id="adaptaciones" class="section adaptaciones-section">
+
+    <h2>Del escenario a la pantalla</h2>
+
+    <p>
+        Algunos musicales nacieron del cine, otros fueron adaptados a películas y otros
+        cuentan con registros filmados de sus producciones escénicas.
+    </p>
+
+    <div class="adaptaciones-grid">
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Basado en película</span>
+            <h3>Moulin Rouge!</h3>
+            <p>El musical está basado en la película de 2001 dirigida por Baz Luhrmann.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Registro filmado</span>
+            <h3>Hamilton</h3>
+            <p>Cuenta con una versión filmada de la producción original de Broadway, estrenada en Disney+ en 2020.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Adaptación cinematográfica</span>
+            <h3>The Phantom of the Opera</h3>
+            <p>Tuvo una adaptación cinematográfica en 2004, dirigida por Joel Schumacher.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Adaptación cinematográfica</span>
+            <h3>Les Misérables</h3>
+            <p>Fue adaptado al cine como película musical en 2012.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Dos películas</span>
+            <h3>West Side Story</h3>
+            <p>Cuenta con adaptaciones cinematográficas en 1961 y 2021.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Adaptación cinematográfica</span>
+            <h3>Rent</h3>
+            <p>Tuvo una adaptación cinematográfica en 2005, dirigida por Chris Columbus.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Película y secuela</span>
+            <h3>Mamma Mia!</h3>
+            <p>Fue adaptado al cine en 2008 y tuvo una secuela en 2018.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Adaptación cinematográfica</span>
+            <h3>Sweeney Todd</h3>
+            <p>Tuvo una adaptación cinematográfica en 2007, dirigida por Tim Burton.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Adaptación cinematográfica</span>
+            <h3>In the Heights</h3>
+            <p>Fue adaptado al cine en 2021, bajo la dirección de Jon M. Chu.</p>
+        </article>
+
+        <article class="adaptacion-card">
+            <span class="adaptacion-tag">Registro escénico</span>
+            <h3>Sunday in the Park with George</h3>
+            <p>Cuenta con registro filmado de la producción escénica; no tiene película comercial tradicional.</p>
+        </article>
+
+    </div>
+
+</section>
+<footer class="footer">
+    <p>Broadway no solo cuenta historias: construye mundos completos a través de música, escena y memoria.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

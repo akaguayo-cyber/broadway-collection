@@ -1,0 +1,905 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f0f0f;
+    color: white;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+}
+
+/* HERO PRINCIPAL */
+
+.hero{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.8)
+    );
+}
+
+.hero-content{
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+/* ========================= */
+/* MENÚ DE NAVEGACIÓN */
+/* ========================= */
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: rgba(0,0,0,.85);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 1000;
+}
+
+.navbar{
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+.logo{
+    color: gold;
+    font-size: 1.8rem;
+}
+
+.menu{
+    list-style: none;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.menu a{
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: gold;
+}
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+.hero-buttons{
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.btn{
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.principal{
+    background-color: gold;
+    color: black;
+}
+
+.principal:hover{
+    transform: translateY(-3px);
+}
+
+.secundario{
+    border: 2px solid gold;
+    color: gold;
+}
+
+.secundario:hover{
+    background-color: gold;
+    color: black;
+}
+/* ========================= */
+/* SECCIONES GENERALES */
+/* ========================= */
+
+.section{
+    padding: 100px 40px;
+    text-align: center;
+    background-color: #111;
+    border-top: 1px solid rgba(255, 215, 0, .25);
+}
+
+.section h2{
+    color: gold;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.section p{
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer{
+    padding: 40px;
+    text-align: center;
+    background-color: black;
+    color: gold;
+    border-top: 1px solid rgba(255, 215, 0, .4);
+}
+/* ========================= */
+/* TIMELINE */
+/* ========================= */
+
+.timeline-container{
+    max-width: 900px;
+    margin: 80px auto;
+    position: relative;
+}
+
+.timeline-container::before{
+    content: "";
+
+    position: absolute;
+
+    left: 120px;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: gold;
+}
+
+.timeline-event{
+    display: flex;
+
+    margin-bottom: 60px;
+
+    position: relative;
+}
+
+.year{
+    width: 100px;
+
+    color: gold;
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+}
+
+.event-card{
+    margin-left: 60px;
+
+    background-color: #1a1a1a;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255,215,0,.3);
+
+    width: 100%;
+
+    text-align: left;
+
+    transition: .3s;
+}
+
+.event-card:hover{
+    transform: translateY(-5px);
+}
+
+.timeline-event::before{
+    content: "";
+
+    position: absolute;
+
+    left: 112px;
+    top: 12px;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: gold;
+}
+/* ========================= */
+/* GALERÍA PRINCIPAL */
+/* ========================= */
+
+.cards-grid{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,320px));
+
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-top: 60px;
+}
+
+.musical-card{
+
+    background: #181818;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,215,0,.15);
+
+    transition: .3s;
+
+    cursor: pointer;
+
+    min-height: 700px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.musical-card:hover{
+
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.4),
+        0 0 25px rgba(212,175,55,.25);
+}
+
+.musical-card img{
+
+    width: 100%;
+
+    height: 460px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+}
+.details-btn{
+    margin-top: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.details-btn{
+
+    margin-top: auto;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #f5d76e
+    );
+
+    color: black;
+
+    font-weight: bold;
+
+    font-size: .95rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+.musical-card h3{
+
+    font-size: 1.6rem;
+
+    color: gold;
+
+    margin-top: 10px;
+
+    margin-bottom: 15px;
+
+    line-height: 1.3;
+}
+
+.musical-card p{
+
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+
+    color: rgba(255,255,255,.9);
+}
+.musical-card h3{
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.3);
+}
+.detalle-card{
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    background: #181818;
+
+    border: 1px solid rgba(255,215,0,.2);
+
+    border-radius: 20px;
+
+    padding: 50px;
+
+    text-align: left;
+
+    line-height: 1.8;
+}
+
+.detalle-card h3{
+
+    color: gold;
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+    font-size: 1.5rem;
+}
+
+.detalle-card p{
+
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+/* ========================= */
+/* FICHA DETALLADA */
+/* ========================= */
+
+.detalle-card{
+
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    background: #181818;
+
+    border: 1px solid rgba(255,215,0,.25);
+
+    border-radius: 20px;
+
+    padding: 45px;
+
+    text-align: left;
+
+    line-height: 1.8;
+}
+
+.detalle-layout{
+
+    display: grid;
+
+    grid-template-columns: 360px 1fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+.detalle-poster img{
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255,215,0,.25);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.45),
+        0 0 25px rgba(212,175,55,.18);
+}
+
+.detalle-info h3{
+
+    color: gold;
+
+    margin-top: 28px;
+
+    margin-bottom: 12px;
+
+    font-size: 1.5rem;
+}
+
+.detalle-info p{
+
+    font-size: 1.05rem;
+
+    margin: 0 0 10px 0;
+
+    max-width: none;
+
+    line-height: 1.8;
+}
+
+.badges{
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+}
+
+.badge{
+
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #f5d76e
+    );
+
+    color: black;
+
+    font-size: .85rem;
+
+    font-weight: bold;
+
+    letter-spacing: .08rem;
+}
+
+/* RESPONSIVE PARA CELULAR */
+
+@media screen and (max-width: 900px){
+
+    .detalle-layout{
+
+        grid-template-columns: 1fr;
+    }
+
+    .detalle-poster img{
+
+        max-width: 320px;
+
+        display: block;
+
+        margin: auto;
+    }
+}
+/* ========================= */
+/* SOUNDTRACK */
+/* ========================= */
+
+.soundtrack-section{
+    background:
+        radial-gradient(circle at top, rgba(212,175,55,.08), transparent 35%),
+        #101010;
+}
+
+.soundtrack-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.song-card{
+    background: #181818;
+    border: 1px solid rgba(255,215,0,.18);
+    border-radius: 18px;
+    padding: 28px;
+    text-align: left;
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+}
+
+.song-card:hover{
+    transform: translateY(-8px);
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.35),
+        0 0 22px rgba(212,175,55,.2);
+}
+
+.song-musical{
+    display: inline-block;
+    color: black;
+    background: linear-gradient(135deg, #d4af37, #f5d76e);
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: .75rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    margin-bottom: 18px;
+}
+
+.song-card h3{
+    color: gold;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    line-height: 1.3;
+    text-shadow: 0 0 10px rgba(212,175,55,.25);
+}
+
+.song-card p{
+    max-width: none;
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,.9);
+}
+
+.song-card strong{
+    color: #f5d76e;
+}
+
+.listen-btn{
+    margin-top: auto;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid gold;
+    color: gold;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.listen-btn:hover{
+    background: gold;
+    color: black;
+    transform: translateY(-3px);
+}
+/* ========================= */
+/* RANKING VISUAL */
+/* ========================= */
+
+.ranking-section{
+    background:
+        radial-gradient(circle at top, rgba(212,175,55,.08), transparent 35%),
+        #111;
+}
+
+.ranking-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 60px;
+}
+
+.ranking-card{
+    background: #181818;
+    border: 1px solid rgba(255,215,0,.18);
+    border-radius: 18px;
+    padding: 30px;
+    text-align: left;
+    min-height: 260px;
+    transition: .3s;
+}
+
+.ranking-card:hover{
+    transform: translateY(-8px);
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.35),
+        0 0 22px rgba(212,175,55,.2);
+}
+
+.ranking-icon{
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.ranking-card h3{
+    color: gold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    text-shadow: 0 0 10px rgba(212,175,55,.25);
+}
+
+.ranking-card p{
+    max-width: none;
+    margin: 0 0 14px 0;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.ranking-card small{
+    display: block;
+    font-size: .95rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,.82);
+}
+/* ========================= */
+/* ADAPTACIONES CINEMATOGRÁFICAS */
+/* ========================= */
+
+.adaptaciones-section{
+    background:
+        radial-gradient(circle at top, rgba(212,175,55,.08), transparent 35%),
+        #101010;
+}
+
+.adaptaciones-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.adaptacion-card{
+    background: #181818;
+    border: 1px solid rgba(255,215,0,.18);
+    border-radius: 18px;
+    padding: 30px;
+    text-align: left;
+    min-height: 260px;
+    transition: .3s;
+}
+
+.adaptacion-card:hover{
+    transform: translateY(-8px);
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.35),
+        0 0 22px rgba(212,175,55,.2);
+}
+
+.adaptacion-tag{
+    display: inline-block;
+    color: black;
+    background: linear-gradient(135deg, #d4af37, #f5d76e);
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: .75rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    margin-bottom: 18px;
+}
+
+.adaptacion-card h3{
+    color: gold;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    text-shadow: 0 0 10px rgba(212,175,55,.25);
+}
+
+.adaptacion-card p{
+    max-width: none;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,.9);
+}
+/* ========================= */
+/* RESPONSIVE GENERAL */
+/* ========================= */
+
+@media screen and (max-width: 900px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 20px;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menu a{
+        font-size: .9rem;
+    }
+
+    .hero{
+        min-height: 100vh;
+        padding: 140px 25px 80px;
+    }
+
+    .hero h1{
+        font-size: 2.7rem;
+    }
+
+    .hero p{
+        font-size: 1.05rem;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn{
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .section{
+        padding: 80px 25px;
+    }
+
+    .section h2{
+        font-size: 2.3rem;
+    }
+
+    .section p{
+        font-size: 1rem;
+    }
+}
+/* ========================= */
+/* RESPONSIVE TIMELINE */
+/* ========================= */
+
+@media screen and (max-width: 700px){
+
+    .timeline-container{
+        margin: 60px auto;
+    }
+
+    .timeline-container::before{
+        left: 20px;
+    }
+
+    .timeline-event{
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    .timeline-event::before{
+        left: 12px;
+        top: 8px;
+    }
+
+    .year{
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .event-card{
+        margin-left: 0;
+    }
+}
+/* ========================= */
+/* RESPONSIVE TARJETAS Y FICHAS */
+/* ========================= */
+
+@media screen and (max-width: 700px){
+
+    .cards-grid,
+    .soundtrack-grid,
+    .ranking-grid,
+    .adaptaciones-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .musical-card{
+        min-height: auto;
+    }
+
+    .musical-card img{
+        height: 420px;
+    }
+
+    .detalle-card{
+        padding: 28px;
+    }
+
+    .detalle-layout{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .detalle-poster img{
+        max-width: 320px;
+        display: block;
+        margin: auto;
+    }
+
+    .badges{
+        justify-content: center;
+    }
+
+    .detalle-info h3{
+        font-size: 1.3rem;
+    }
+
+    .detalle-info p{
+        font-size: 1rem;
+    }
+}
+.spotify-player{
+    margin-top: 20px;
+}
+
+.spotify-player iframe{
+    width: 100%;
+    border-radius: 12px;
+}
